@@ -1,0 +1,22 @@
+name: Run Daily Budget Insert
+
+on:
+  schedule:
+    - cron: '0 14 * * *'  # Adjust this based on your preferred time (Sydney midnight)
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run daily budget insert script
+      env:
+        CUSTYUP_API_KEY: ${{ secrets.CUSTYUP_API_KEY }}
+        SERVER_URL: ${{ secrets.SERVER_URL }}  # Reference to the secret
+      run: |
+        chmod +x ./scripts/daily_budget_insert.sh
+        ./scripts/daily_budget_insert.sh
