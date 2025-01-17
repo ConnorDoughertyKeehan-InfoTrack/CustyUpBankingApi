@@ -8,6 +8,7 @@ To get this project running on your local requires a few steps:
 1. Create a SQL Server Express database(OR migrate the code to a SQL DB of your choice).
 2. Create the relevant tables/stored procs from the SQLScripts folder in that database.
 3. Fill in your app settings with the relevant tokens:
+
     a. UpBankingApiToken: This is your UP Bank Personal Api Token.
 
     b. ConnectionStrings:MegaDb: This is the connection string for your SQL database.
