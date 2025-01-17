@@ -1,4 +1,4 @@
-﻿namespace CustyUpBankingApi.Models.Entities
+﻿namespace CustyUpBankingApi.Models.Enums
 {
     public enum Categories
     {
