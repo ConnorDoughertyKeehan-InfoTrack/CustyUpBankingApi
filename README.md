@@ -9,8 +9,11 @@ To get this project running on your local requires a few steps:
 2. Create the relevant tables/stored procs from the SQLScripts folder in that database.
 3. Fill in your app settings with the relevant tokens:
     a. UpBankingApiToken: This is your UP Bank Personal Api Token.
-    b. ConnectionStrings:MegaDb: This is the connection string for your SQL database
-    c. OpenAIServiceOptions: This shouldn't be necessary for base functionality, it's an API Key for OpenAI to assist with Categorizing as well as the AI advice(Which kind of sucks)
+
+    b. ConnectionStrings:MegaDb: This is the connection string for your SQL database.
+
+    c. OpenAIServiceOptions: This shouldn't be necessary for base functionality, it's an API Key for OpenAI to assist with Categorizing as well as the AI advice(Which kind of sucks).
+
     d. CustyUpApiKey: This is an api key, this is what you will use to auth yourself to this api. Put any secure string in there and use it as your API Key when authorizing.
 
 
